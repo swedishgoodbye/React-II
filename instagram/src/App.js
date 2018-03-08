@@ -1,15 +1,27 @@
 import React, { Component } from 'react';
 import './App.css';
 import './components/PostContainer/PostContainer.css'
-import './components/CommentSection/CommentSection.css'
+import './components/CommentSection/CommentSection.css' 
+import  dummyData  from './dummy-data.js'
 import {SearchBar} from './components/SearchBar/SearchBar.js'
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      name: "Info",
+      Data: []
+    };
+    console.log('Constructed');
+  }
+
+  componentDidMount(){
+    console.log("Mounting...")
+    this.setState({ Data: dummyData});
+  }
   render() {
     return (
    <div className="App">
-
-
       <navbar className="Nav__Section">
       <div className="Nav__Logo">
       <img src={require (`./components/media/Insta-Logo.jpg`)} alt="Instagram-Text-Logo" />
