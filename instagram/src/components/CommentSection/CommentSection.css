@@ -1,0 +1,26 @@
+.Comment__Buttons{
+    display: flex;
+    border: 1px green solid;
+    padding: 8px 5%;
+    justify-content: space-between;
+  }
+
+  .Comment__Likes{
+      border: 1px pink solid;
+      text-align: left;
+      padding: 2px 5%;
+  }
+
+  .Comment__Text{
+      border: 1px darkblue solid;
+      text-align: left;
+      padding: 5% 5%;
+  }
+
+  .Comment__New{
+      border: 1px orange solid;
+      text-align: left;
+      padding: 5px 5%;
+  }
+
+  

@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import './components/PostContainer/PostContainer.css'
+import './components/CommentSection/CommentSection.css'
 import {SearchBar} from './components/SearchBar/SearchBar.js'
 
 class App extends Component {
   render() {
     return (
-      // <div className="App">
+   <div className="App">
 
-      // </div>
+
       <navbar className="Nav__Section">
       <div className="Nav__Logo">
       <img src={require (`./components/media/Insta-Logo.jpg`)} alt="Instagram-Text-Logo" />
@@ -16,10 +18,33 @@ class App extends Component {
         <SearchBar />
        </div>
        <div className="Nav__Icons">
-       <img src={require (`./components/media/compass.jpg`)} alt="insta-compass" />
+       <button className="Nav__IconButton Icon__Button"><img src={require (`./components/media/compass.jpg`)} alt="insta-compass" /></button>
+       <button className="Nav__IconButton Icon__Button"><img src={require (`./components/media/navheart.jpg`)} alt="insta-heart" /></button>
+       <button className="Nav__IconButton Icon__Button"><img src={require (`./components/media/navsilo.jpg`)} alt="insta-silouette" /></button>
+
        </div>
        
       </navbar>
+
+      <div className="Post__Section">
+        <div className="Post__Head">Username</div>
+        <div className="Post__Picture">Pic Box</div>
+        <div className="Comment__Section">
+          <div className="Comment__Buttons">
+            <div className="Comment__ButtonsLeft">
+              <button className="Comment__ButtonIcon Icon__Button"><img src={require (`./components/media/commheart.jpg`)} alt="comment-heart" /></button>
+               <button className="Comment__ButtonIcon Icon__Button"><img src={require (`./components/media/commbubb.jpg`)} alt="comment-bubble" /></button>
+            </div>
+            <button className="Comment_ButtonIcon Icon__Button"><img src={require (`./components/media/bookmark.jpg`)} alt="comment-heart" /></button>
+          </div>
+          <div className="Comment__Likes">Comment Likes</div>
+          <div className="Comment__Text">Comment Text</div>
+          <div className="Comment__New">Add a comment...</div>
+        </div>
+      </div>
+
+      </div>
+
     );
   }
 }

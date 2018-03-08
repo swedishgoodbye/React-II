@@ -1,0 +1,27 @@
+
+.Post__Section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px black solid;
+    margin: 20px 0;
+    height: 100%;
+    width: 580px;
+    align-self: center;
+  }
+  
+  .Post__Head{
+    border: 1px black solid;
+    width: 92%;
+    height: 100%;
+    padding: 10px 0;
+    padding-left: 5%;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  
+  .Post__Picture{
+    border: 1px red solid;
+    padding: 40% 0;
+  }
+  

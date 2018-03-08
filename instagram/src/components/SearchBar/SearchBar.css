@@ -8,6 +8,7 @@
 
 .Nav__Search{
     align-self: center;
+    margin-right: 3%;
 }
 .Nav__SearchText{
     text-align: center;
@@ -15,4 +16,9 @@
 
 .Nav__Icons{
     padding-top: 5px;
+}
+
+.Nav__IconButton{
+    background: white;
+    border: none;
 }
