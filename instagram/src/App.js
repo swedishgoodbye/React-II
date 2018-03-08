@@ -4,6 +4,7 @@ import './components/PostContainer/PostContainer.css'
 import './components/CommentSection/CommentSection.css' 
 import  dummyData  from './dummy-data.js'
 import {SearchBar} from './components/SearchBar/SearchBar.js'
+import {PostContainer} from './components/PostContainer/PostContainer.js'
 
 class App extends Component {
   constructor(){
@@ -37,8 +38,12 @@ class App extends Component {
        </div>
        
       </navbar>
+      
+      <div>
+        <PostContainer name={this.state.name} data={this.state.Data} />;
+      </div>
 
-      <div className="Post__Section">
+      {/* <div className="Post__Section">
         <div className="Post__Head">Username</div>
         <div className="Post__Picture">Pic Box</div>
         <div className="Comment__Section">
@@ -53,7 +58,7 @@ class App extends Component {
           <div className="Comment__Text">Comment Text</div>
           <div className="Comment__New">Add a comment...</div>
         </div>
-      </div>
+      </div> */}
 
       </div>
 

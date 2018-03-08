@@ -1,24 +1,36 @@
 .Nav__Section{
-    display: flex;
+    position: fixed;
+    display: inline-flex;
     justify-content: space-around;
     padding: 20px 0;
     border-bottom: 1px solid black;
-    opacity: .5;
+    opacity: 1;
+    width:100%;
+    background-color: white;
+    
 }
 
 .Nav__Search{
     align-self: center;
     margin-right: 3%;
+    opacity: .5;
 }
 .Nav__SearchText{
     text-align: center;
+    opacity: .9;
 }
 
 .Nav__Icons{
     padding-top: 5px;
-}
+    opacity: .8;
+} 
 
 .Nav__IconButton{
     background: white;
     border: none;
+    opacity: .8;
+}
+
+.Nav__Logo{
+    opacity: .6;
 }
