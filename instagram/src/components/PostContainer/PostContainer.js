@@ -1,5 +1,6 @@
 import React from "react";
 import './PostContainer.css';
+import {CommentSection} from "../CommentSection/CommentSection.js";
 
 const PostContainer = props => {
     const { data } = props;
@@ -13,7 +14,7 @@ const PostContainer = props => {
                         <div className="Post__Username">{user.username}</div>
                         </div>  
                       <div className="Post__ImgContainer"><img className="Post__Img" src={user.imageUrl} alt='post picture' /></div>
-                     
+                      <CommentSection comment={user.comment} />;
                     </div>
                 );
             })}
