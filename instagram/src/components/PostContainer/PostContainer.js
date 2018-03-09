@@ -14,7 +14,7 @@ const PostContainer = props => {
                         <div className="Post__Username">{user.username}</div>
                         </div>  
                       <div className="Post__ImgContainer"><img className="Post__Img" src={user.imageUrl} alt='post picture' /></div>
-                      <CommentSection comment={user.comment} />;
+                      <CommentSection comment={this.state.comment} />;
                     </div>
                 );
             })}

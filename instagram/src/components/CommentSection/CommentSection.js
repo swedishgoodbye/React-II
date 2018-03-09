@@ -1,11 +1,11 @@
 import React from 'react';
 import './CommentSection.css';
 
-const CommentSection = props => {
-    const { data } = props;
+const CommentSection = comment => {
+
     return(
         <div className="Comment_Init">
-            {data.map(user => {
+            {comment.map(user => {
                 return(
                     <div>
                         <div className="Comment__Section">
