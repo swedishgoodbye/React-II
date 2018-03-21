@@ -5,13 +5,16 @@ import './components/CommentSection/CommentSection.css'
 import  dummyData  from './dummy-data.js'
 import {SearchBar} from './components/SearchBar/SearchBar.js'
 import {PostContainer} from './components/PostContainer/PostContainer.js'
+import { CommentSection } from './components/CommentSection/CommentSection';
+
 
 class App extends Component {
   constructor(){
     super();
     this.state = {
       name: "Info",
-      Data: []
+      Data: [],
+      CommentData: []
     };
     console.log('Constructed');
   }
@@ -19,6 +22,7 @@ class App extends Component {
   componentDidMount(){
     console.log("Mounting...")
     this.setState({ Data: dummyData});
+    this.setState({CommentData: dummyData.comments});
   }
   render() {
     return (
@@ -40,7 +44,7 @@ class App extends Component {
       </navbar>
       
       <div>
-        <PostContainer name={this.state.name} data={this.state.Data} />;
+        <PostContainer name={this.state.name} data={this.state.Data} comment={this.state.CommentData} />;
       </div>
 
       {/* <div className="Post__Section">

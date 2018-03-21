@@ -7,7 +7,7 @@ const CommentSection = props => {
         <div className="Comment_Init">
             {comment.map(user => {
                 return(
-                    <div>
+                    <div key="user.username">
                         <div className="Comment__Section">
                              <div className="Comment__Buttons">
                                 <div className="Comment__ButtonsLeft">
@@ -16,9 +16,9 @@ const CommentSection = props => {
                                 </div>
                                 <button className="Comment_ButtonIcon Icon__Button"><img src={require (`../media/bookmark.jpg`)} alt="comment-heart" /></button>
                             </div>
-                            <div className="Comment__Likes">Comment Likes</div>
-                            <div className="Comment__Text">Comment Text</div>
-                            <div className="Comment__New">Add a comment...</div>
+                            <div className="Comment__Likes">{user.likes}</div>
+                            <div className="Comment__Text"></div>
+                            <div className="Comment__New"></div>
                          </div>
                     </div>
                     

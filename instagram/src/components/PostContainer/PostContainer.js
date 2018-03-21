@@ -3,7 +3,7 @@ import './PostContainer.css';
 import {CommentSection} from "../CommentSection/CommentSection.js";
 
 const PostContainer = props => {
-    const { data } = props;
+    const { data, comment } = props;
     return(
         <div className="Post_Init">
             {data.map(user => {
